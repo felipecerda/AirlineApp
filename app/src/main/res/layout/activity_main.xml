@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/boeing747"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:padding="16dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@android:color/black"
+        android:text="Pixel Airlines" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:paddingLeft="16dp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/black"
+        android:text="www.flypixel.com" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_above="@+id/number"
+        android:textSize="16sp"
+        android:paddingLeft="16dp"
+        android:layout_alignParentLeft="true"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/white"
+        android:text="info@flypixel.com" />
+
+    <TextView
+        android:id="@+id/number"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:layout_alignParentBottom="true"
+        android:textSize="16sp"
+        android:paddingLeft="16dp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/white"
+        android:text="+49 123 456 7890" />
+
+    <TextView
+        android:id="@+id/hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/address_detail"
+        android:textSize="16sp"
+        android:paddingRight="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@+id/email"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/white"
+        android:text="Hours:"
+        android:layout_alignLeft="@id/address_detail" />
+
+    <TextView
+        android:id="@+id/hours_detail"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hours"
+        android:layout_alignStart="@id/address_detail"
+        android:textSize="16sp"
+        android:paddingRight="16dp"
+        android:layout_alignParentRight="true"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/white"
+        android:text="Mon-Fri 09:00 - 18:00"
+        android:layout_alignLeft="@id/address_detail" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hours_detail"
+        android:layout_alignStart="@id/address_detail"
+        android:textSize="16sp"
+        android:paddingRight="16dp"
+        android:layout_alignParentRight="true"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/white"
+        android:text="Address:"
+        android:layout_alignLeft="@id/address_detail" />
+
+    <TextView
+        android:id="@+id/address_detail"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/address"
+        android:textSize="16sp"
+        android:paddingRight="16dp"
+        android:layout_alignParentRight="true"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/white"
+        android:text="123 Nice Street, Cologne" />
+
+    <TextView
+        android:id="@+id/country"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/address_detail"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/address_detail"
+        android:textSize="16sp"
+        android:paddingRight="16dp"
+        android:layout_alignParentRight="true"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/white"
+        android:text="Germany"
+        android:layout_alignLeft="@id/address_detail" />
+</RelativeLayout>
